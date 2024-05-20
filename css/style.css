@@ -130,12 +130,12 @@ main{
     text-align: center;
 
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
-.music{
-    width: calc(80% / 6);
+.canvas{
+    width: calc(100% / 6 - 15px );
 }
 
 
