@@ -50,10 +50,12 @@ h2{
 
 /* LEFT NAV */
 .left-nav{
-    width: 200px;
+    width: 180px;
     height: calc(100vh - 70px);
     background-color: black;
     padding: 20px 10px;
+    
+    transition: 200ms;
     
     display: flex;
     flex-direction: column;
@@ -87,7 +89,7 @@ h2{
 
 /* MAIN */
 main{
-    width: calc(100% - 200px);
+    width: calc(100% - 180px);
     height: calc(100vh - 70px);
     background-color: #141922;
 
@@ -98,7 +100,7 @@ main{
 
 .upgrade{
     height: 70px;
-    width: calc(100% - 200px);
+    width: calc(100% - 180px);
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.3);
 
@@ -119,12 +121,13 @@ main{
     display: flex;
     justify-content: center;
     gap: 20px;
+
+    flex-wrap: wrap;
     
 }
 
 .row{
     max-width: 100%;
-    min-width: 300px;
     padding: 15px 0;
 
     text-align: center;
@@ -136,6 +139,44 @@ main{
 
 .canvas{
     width: calc(100% / 6 - 15px );
+    padding-bottom: 10px;
+    border-radius: 25px;
+
+    transition: 500ms;
+
+}
+
+.canvas>div{
+    position: relative;
+}
+
+.canvas:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.canvas:hover>div>img{
+    filter: brightness(60%);
+}
+
+.overlay>i{
+    font-size: 3rem;
+    display: none;
+}
+
+.canvas:hover>div>.overlay>i{
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.round{
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 
@@ -169,12 +210,35 @@ main{
 
 /* TABLET */
 @media screen and (max-width:768px) {
+    .canvas{
+        width: calc(100% / 4 - 15px );
+    }
 }
 
 
 
-/* MOBILE */
-@media screen and (max-width:320px) {
+
+/* MOBILE 1*/
+@media screen and (max-width:568px) {
+    
+    .canvas{
+        width: calc(100% / 2 - 15px );
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE 2*/
+@media screen and (max-width:400px) {
     
     
     main{
@@ -204,4 +268,6 @@ main{
     .dns{
         display: none;
     }
+
+    
 }
