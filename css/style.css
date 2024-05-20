@@ -40,6 +40,10 @@ h1{
     font-size: 2rem;
     padding-top: 30px;
 }
+
+h2{
+    padding: 10px 0;
+}
   
 
 
@@ -119,15 +123,19 @@ main{
 }
 
 .row{
-    width: 100%;
+    max-width: 100%;
+    min-width: 300px;
     padding: 15px 0;
+
+    text-align: center;
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .music{
-    width: calc(95% / 6);
+    width: calc(80% / 6);
 }
 
 
