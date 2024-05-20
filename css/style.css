@@ -46,6 +46,10 @@ h2{
     padding: 10px 0;
 }
   
+.tworem{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
 
 
 
@@ -204,7 +208,6 @@ main{
 
 .bn-left{
     height: 100%;
-    background-color: grey;
 
     display: flex;
     align-items: center;
@@ -245,14 +248,59 @@ main{
 
 
 .bn-mid{
-    min-width: 180px;
     height: 100%;
-    background-color: grey;
+    width: 100%;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.bnm-top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bnm-bot{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     
 }
 
+.time-bar{
+    width: 50%;
+    height: 5px;
+    background-color: grey;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .bn-right{
-    min-width: 180px;
     height: 100%;
     background-color: grey;
     
