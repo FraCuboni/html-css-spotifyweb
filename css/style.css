@@ -31,13 +31,22 @@ i{
 ul{
     list-style-type: none;
 }
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-size: 2rem;
+    padding-top: 30px;
+}
   
 
 
 
 /* LEFT NAV */
 .left-nav{
-    width: 150px;
+    width: 200px;
     height: calc(100vh - 70px);
     background-color: black;
     padding: 20px 10px;
@@ -74,7 +83,7 @@ ul{
 
 /* MAIN */
 main{
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     height: calc(100vh - 70px);
     background-color: #141922;
 
@@ -85,7 +94,7 @@ main{
 
 .upgrade{
     height: 70px;
-    width: calc(100% - 150px);
+    width: calc(100% - 200px);
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.3);
 
@@ -112,7 +121,6 @@ main{
 .row{
     width: 100%;
     padding: 15px 0;
-    background-color: blue;
 
     display: flex;
     justify-content: space-between;
@@ -120,8 +128,6 @@ main{
 
 .music{
     width: calc(95% / 6);
-    aspect-ratio: 1 / 1;
-    background-color: red;
 }
 
 
