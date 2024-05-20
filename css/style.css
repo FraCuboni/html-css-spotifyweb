@@ -4,6 +4,7 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
     color: white;
+    text-decoration: none;
     font-size: 13px;
 }
 
@@ -35,6 +36,11 @@ i{
     height: calc(100vh - 100px);
     background-color: black;
     padding: 20px 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .logo{
