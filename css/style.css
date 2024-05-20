@@ -28,6 +28,11 @@ i{
     font-size: 1.5rem;
 }
 
+ul{
+    list-style-type: none;
+}
+  
+
 
 
 /* LEFT NAV */
@@ -92,13 +97,41 @@ main{
     align-items: center;
 }
 
-.upgrade>.button{
-
-}
-
 .container{
-    margin-top: 100px;
+    margin-top: 70px;
+    padding: 15px;
 }
+
+.main-gps{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.row{
+    width: 100%;
+    padding: 15px 0;
+    background-color: blue;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.music{
+    width: calc(95% / 6);
+    aspect-ratio: 1 / 1;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* BOTTOM NAV */
