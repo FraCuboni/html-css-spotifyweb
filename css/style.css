@@ -54,12 +54,12 @@ h2{
 
 
 
-/* LEFT NAV */
+/* LEFT NAV, TOP */
 .left-nav{
     width: 180px;
     height: calc(100vh - 70px);
     background-color: black;
-    padding: 20px;
+    padding: 20px 20px 0;
     
     transition: 200ms;
     
@@ -80,7 +80,7 @@ h2{
 }
 
 .left-nav-top>*{
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .icon-gps{
@@ -88,16 +88,36 @@ h2{
     padding-left: none;
 }
 
+
+
 .playlist>p{
     font-weight: 700;
 }
 
 .iconhsl{
+    width: 100%;
+    padding: 0.5rem 0;
+
+    position: relative;
+
     display: flex;
+    align-items: center;
+}
+
+.green-bar{
+    height: 3rem;
+    width: 4px;
+    background-color: greenyellow;
+
+    position: absolute;
+    left: -20px;
 }
 
 .iconhsl>i{
     font-size: 2rem;
+    height: 2rem;
+    min-width: 3rem;
+    text-align: left;
 }
 
 
@@ -117,8 +137,38 @@ h2{
     font-size: 3em;
 }
 
+/* LEFT NAV BOTTOM */
 
+.icon-svg{
+    width: 100%;
+    padding: 0.5rem 0;
 
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-svg>img{
+    width: 2rem;
+}
+
+.download{
+    border-bottom: 1px solid white;
+}
+
+.download>img{
+    width: 1.5rem;
+}
+
+.account{
+    font-weight: 700;
+}
+
+.account-img{
+    background-color: grey;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
 
 
 
@@ -437,6 +487,10 @@ main{
         padding: 20px 10px;
     }
 
+    .green-bar{
+        left: -10px;
+    }
+
     .logo{
         display: none;
         width: 100%;
@@ -448,6 +502,17 @@ main{
 
     .dns{
         display: none;
+    }
+
+    .iconhsl>i{
+        font-size: 1.5rem;
+        height: auto;
+        min-width: 0;
+        text-align: left;
+    }
+
+    .download{
+        border: 0;
     }
 
     
