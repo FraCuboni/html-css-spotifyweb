@@ -283,14 +283,44 @@ main{
 }
 
 
+.time-bar-tracker{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    position: relative;
+}
+
+.time-bar-dot{
+    width: 1rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: white;
+    
+    display: none;
+
+    position: absolute;
+    right: 0;
+    transform: translate( 0, -30%);
+}
+
+.time-bar:hover>.time-bar-tracker{
+    background-color: #B3E859;
+
+}
+
+.time-bar:hover>.time-bar-tracker>.time-bar-dot{
+    display: block;
+}
 
 
 
 
 
 
-
-
+/* #B3E859 */
 
 
 
