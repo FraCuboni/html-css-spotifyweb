@@ -6,6 +6,7 @@
     text-decoration: none;
     font-size: 13px;
     transition: 200ms;
+    text-overflow: ellipsis;
 }
 
 
@@ -345,7 +346,6 @@ main{
 }
 
 .bn-left{
-    background-color: rebeccapurple;
     height: 100%;
     width: 30%;
     max-width: 200px;
@@ -407,7 +407,6 @@ main{
 
 
 .bn-mid{
-    background-color: red;
     height: 100%;
     width: 40%;
 
@@ -492,7 +491,6 @@ main{
 
 
 .bn-right{
-    background-color: rebeccapurple;
     height: 100%;
     width: 30%;
     max-width: 200px;
@@ -502,8 +500,7 @@ main{
     justify-content: space-around;
 }
 
-.bn-right>*{
-}
+
 
 .time-bar.volume{
     width: 6rem;
@@ -526,6 +523,14 @@ main{
     .canvas{
         width: calc(100% / 4 - 15px );
     }
+
+    .dnst{
+        display: none;
+    }
+
+    .bn-right>.dnst{
+        display: none;
+    }
 }
 
 
@@ -538,6 +543,14 @@ main{
         width: calc(100% / 2 - 15px );
     }
     
+    .bn-right{
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+    }
+
+    .dnsm{
+        display: none;
+    }
 }
 
 
